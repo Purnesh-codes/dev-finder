@@ -25,7 +25,9 @@ export default function useUserSearch(username: string) {
 }
 
 async function getUser(username: string): Promise<GitHubUser> {
-  const response = await fetch(`https://api.github.com/users/${encodeURIComponent(username)}`);
+  const response = await fetch(
+    `https://api.github.com/users/${encodeURIComponent(username)}`
+  );
 
   if (!response.ok) {
     if (response.status === 404) {

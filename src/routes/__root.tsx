@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Outlet, createRootRoute } from '@tanstack/react-router';
-import SearchBar from '../components/SearchBar';
+// import SearchBar from '../components/SearchBar';
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -14,7 +14,7 @@ function RootComponent() {
           <div className="text-white text-3xl font-bold ">devfinder</div>
         </header>
         <main className=" h-screen p-4 space-y-5 text-white">
-          <SearchBar />
+          {/* <SearchBar /> */}
           <Outlet />
         </main>
       </div>

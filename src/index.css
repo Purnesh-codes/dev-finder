@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @theme {
   --color-bg-color: #141c2f;
   --color-bg-light: #1f2a48;
