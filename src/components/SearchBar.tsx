@@ -11,7 +11,7 @@ export default function SearchBar() {
         placeholder="Search Github username..."
       />
 
-      <button className="bg-blue-500 px-4 py-3 rounded-2xl cursor-pointer font-semibold">
+      <button className="bg-blue-500 px-4 py-3 rounded-2xl cursor-pointer ">
         Search
       </button>
     </form>

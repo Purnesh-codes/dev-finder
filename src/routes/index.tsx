@@ -1,11 +1,15 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { Bird, Building2, Link, MapPin } from 'lucide-react';
+import useUserSearch from '../hooks/useUserSearch';
 
 export const Route = createFileRoute('/')({
   component: RouteComponent,
 });
 
 function RouteComponent() {
+  const { data } = useUserSearch('Purnesh-codes');
+  console.log(data);
+
   return (
     <div className="bg-bg-light flex flex-col  gap-5  p-5 rounded-2xl ">
       {/* user-top */}
@@ -30,10 +34,7 @@ function RouteComponent() {
 
       {/* user-info */}
       <div className="space-y-5">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores
-          iure harum, assumenda illum laborum quos quas obcaecati.
-        </p>
+        <p className="text-base">This user has no bio</p>
 
         <div className="bg-bg-color flex justify-evenly gap-5 py-1 rounded-2xl">
           <div className="p-2 flex flex-col items-center gap-2">
